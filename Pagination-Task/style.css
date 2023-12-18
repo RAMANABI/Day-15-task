@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .list{
+   width: 100%;
+   max-width: 768px;
+   border: 1px solid;
+   margin-top: 25px;
+   background-color: white;
+   margin-bottom: 1px;
+}
+
+main .list .item{
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+.pagenumbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pagenumbers button{
+    width:50px;
+    height: 50px;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(97, 205, 241);
+    margin: 5px;    
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.pagenumbers button:hover{
+    background-color: lightgreen;
+}
+
+.pagenumbers button.active{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+}
